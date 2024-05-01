@@ -16,6 +16,7 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/popup.css">
 
   <!--
     - google font link
@@ -444,7 +445,7 @@
 
               <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
 
-              <time datetime="2021-06-14">14 June, 2021</time>
+              <time datetime="2023-06-14">14 June, 2023</time>
 
               <div data-modal-text>
                 <p>
@@ -624,7 +625,7 @@
 
             </li>
 
-            <li class="timeline-item">
+            <!-- <li class="timeline-item">
 
               <h4 class="h4 timeline-item-title">Web designer</h4>
 
@@ -636,7 +637,7 @@
                 exceptur.
               </p>
 
-            </li>
+            </li> -->
 
           </ol>
 
@@ -778,36 +779,34 @@
 
           <ul class="project-list">
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a class="project-link" data-id="petfashion">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                  <img src="./assets/images/Petfashion2.png" alt="Pet Fashion">
                 </figure>
 
-                <h3 class="project-title">Finance</h3>
-
+                <h3 class="project-title">Pet Fashion</h3>
                 <p class="project-category">Web development</p>
-
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a class="project-link" data-id="medica">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/24doctor.png" alt="orizon" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Orizon</h3>
+                <h3 class="project-title">Medica</h3>
 
                 <p class="project-category">Web development</p>
 
@@ -815,7 +814,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a href="https://github.com/bohaz/24hour_doctor-front_end">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -941,6 +940,18 @@
             </li>
 
           </ul>
+
+          <!-- Pop-up structure (hidden initially) -->
+          <div id="projectPopup" class="popup" style="display: none;">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <img id="popupImg" src="" alt="Project Image">
+              <h3 id="popupTitle"></h3>
+              <p id="popupDesc"></p>
+              <a id="popupSource" href="#">See Source</a>
+              <a id="popupLive" href="#">See Live</a>
+            </div>
+          </div>
 
         </section>
 
