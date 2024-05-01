@@ -157,3 +157,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+// project popup 
+document.querySelectorAll('.project-link').forEach(item => {
+  item.addEventListener('click', function() {
+    const projectId = this.getAttribute('data-id');
+    const popup = document.getElementById('projectPopup');
+    const imgSrc = this.querySelector('figure img').src;
+    const title = this.querySelector('.project-title').textContent;
+    // Aquí puedes añadir la descripción y los links correspondientes
+    document.getElementById('popupImg').src = imgSrc;
+    document.getElementById('popupTitle').textContent = title;
+    // Por ejemplo, puedes poner los links directamente o buscarlos de alguna fuente
+    document.getElementById('popupSource').href = 'https://github.com/bohaz/' + projectId;
+    document.getElementById('popupLive').href = 'https://example.com/' + projectId;
+    
+    popup.style.display = 'flex';
+  });
+});
+
+document.querySelector('.close').addEventListener('click', function() {
+  document.getElementById('projectPopup').style.display = 'none';
+});
