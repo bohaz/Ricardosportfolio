@@ -158,19 +158,35 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 // project popup 
+
+const projectLinks = {
+  'petfashion': {
+    liveUrl: 'https://petfashion.vercel.app',
+    sourceUrl: 'https://github.com/bohaz/petfashion'
+  },
+  'space-travelers-hub': {
+    liveUrl: 'https://space-travelers-hub-g5v6.onrender.com',
+    sourceUrl: 'https://github.com/bohaz/Space-Travelers-Hub'
+  }
+};
+
 document.querySelectorAll('.project-link').forEach(item => {
   item.addEventListener('click', function() {
     const projectId = this.getAttribute('data-id');
     const popup = document.getElementById('projectPopup');
     const imgSrc = this.querySelector('figure img').src;
     const title = this.querySelector('.project-title').textContent;
-    // Aquí puedes añadir la descripción y los links correspondientes
+    const projectData = projectLinks[projectId];
+
+    // Establecer la imagen y título en el popup
     document.getElementById('popupImg').src = imgSrc;
     document.getElementById('popupTitle').textContent = title;
-    // Por ejemplo, puedes poner los links directamente o buscarlos de alguna fuente
-    document.getElementById('popupSource').href = 'https://github.com/bohaz/' + projectId;
-    document.getElementById('popupLive').href = 'https://example.com/' + projectId;
     
+    // Actualizar los enlaces en el popup
+    document.getElementById('popupSource').href = projectData.sourceUrl;
+    document.getElementById('popupLive').href = projectData.liveUrl;
+
+    // Mostrar el popup
     popup.style.display = 'flex';
   });
 });
