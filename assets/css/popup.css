@@ -78,8 +78,24 @@
   background: var(--onyx);
 }
 
+.getmyresume {
+  opacity: 0.7;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 13px;
+  width: 100%;
+  height: 32px;
+  border-radius: 8px;
+  color: var(--white-2);
+  background: var(--onyx);
+  margin-top: 4%;
+}
+
 .close:hover,
-.close:focus, .popupLive a:hover, .popupSource a:hover { opacity: 1; }
+.close:focus, .popupLive a:hover, .popupSource a:hover, .getmyresume:hover { opacity: 1; }
 
 .technology-badge {
   padding: 5px 10px;
