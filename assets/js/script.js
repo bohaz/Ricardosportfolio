@@ -226,3 +226,7 @@ document.querySelectorAll('.project-link').forEach(item => {
 document.querySelector('.close').addEventListener('click', function() {
   document.getElementById('projectPopup').style.display = 'none';
 });
+
+document.getElementById('downloadResumeButton').addEventListener('click', function() {
+  window.open('https://docs.google.com/document/d/1QIgqEMNjWjCK0odwaeO7DAvRCbaUUkV8huDJ8GYH2VE/edit?usp=sharing', '_blank');
+});
