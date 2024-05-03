@@ -162,23 +162,28 @@ for (let i = 0; i < navigationLinks.length; i++) {
 const projectLinks = {
   'petfashion': {
     liveUrl: 'https://petfashion.vercel.app',
-    sourceUrl: 'https://github.com/bohaz/petfashion'
+    sourceUrl: 'https://github.com/bohaz/petfashion',
+    technologies: ['React', 'Ruby', 'Tailwind-css'],
   },
   'space-travelers-hub': {
     liveUrl: 'https://space-travelers-hub-g5v6.onrender.com',
-    sourceUrl: 'https://github.com/bohaz/Space-Travelers-Hub'
+    sourceUrl: 'https://github.com/bohaz/Space-Travelers-Hub',
+    technologies: ['React', 'Redux', 'Bootstrap'],
   },
   'air-quality': {
     liveUrl: 'https://air-quality-monitoring-app.onrender.com/',
     sourceUrl: 'https://github.com/bohaz/air-quality-monitoring-app',
+    technologies: ['React', 'Redux', 'CSS3'],
   },
   'finals-rodeo': {
     liveUrl: 'https://bohaz.github.io/Capstone-project1/',
     sourceUrl: 'https://github.com/bohaz/Capstone-project1',
+    technologies: ['HTML', 'CSS3', 'Javascript'],
   },
   'math-magicians': {
     liveUrl: 'https://ricardo-math-magicians.onrender.com/',
     sourceUrl: 'https://github.com/bohaz/math-magicians',
+    technologies: ['React', 'Redux', 'CSS3'],
   }
 };
 
@@ -202,6 +207,16 @@ document.querySelectorAll('.project-link').forEach(item => {
     const liveLink = document.getElementById('popupLive');
     liveLink.href = projectData.liveUrl;
     liveLink.target = '_blank';
+
+     // Actualizar las tecnologías
+     const technologiesContainer = document.getElementById('popupTechnologies');
+     technologiesContainer.innerHTML = '';  // Limpiar contenido anterior
+     projectData.technologies.forEach(tech => {
+       const techElement = document.createElement('span');
+       techElement.textContent = tech;
+       techElement.classList.add('technology-badge');  // Agregar clase para estilos
+       technologiesContainer.appendChild(techElement);
+     });
 
     // Mostrar el popup
     popup.style.display = 'flex';
