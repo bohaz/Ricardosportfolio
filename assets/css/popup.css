@@ -16,12 +16,12 @@
   align-items: center;
   font-size: 24px;
   color: var(--white-2);
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 .popup-content {
   background: var(--bg-gradient-onyx);
-  padding: 20px;
+  padding: 2%;
   border-radius: 14px;
   text-align: center;
   box-shadow: var(--shadow-2);
@@ -29,10 +29,10 @@
 
 .popup-content img {
   width: 100%;
-  max-width: 500px;
+  max-width: 400px;
   height: auto;
   border-radius: 14px;
-  margin-bottom: 20px;
+  margin-bottom: 2%;
 }
 
 .close {
@@ -71,7 +71,7 @@
   align-items: center;
   cursor: pointer;
   font-size: 18px;
-  width: 200px;
+  width: 150px;
   height: 32px;
   border-radius: 8px;
   color: var(--white-2);
@@ -80,3 +80,13 @@
 
 .close:hover,
 .close:focus, .popupLive a:hover, .popupSource a:hover { opacity: 1; }
+
+.technology-badge {
+  padding: 5px 10px;
+  margin: 3px;
+  background: var(--onyx);
+  color: white;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 2%;
+}
