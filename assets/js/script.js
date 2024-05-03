@@ -167,6 +167,18 @@ const projectLinks = {
   'space-travelers-hub': {
     liveUrl: 'https://space-travelers-hub-g5v6.onrender.com',
     sourceUrl: 'https://github.com/bohaz/Space-Travelers-Hub'
+  },
+  'air-quality': {
+    liveUrl: 'https://air-quality-monitoring-app.onrender.com/',
+    sourceUrl: 'https://github.com/bohaz/air-quality-monitoring-app',
+  },
+  'finals-rodeo': {
+    liveUrl: 'https://bohaz.github.io/Capstone-project1/',
+    sourceUrl: 'https://github.com/bohaz/Capstone-project1',
+  },
+  'math-magicians': {
+    liveUrl: 'https://ricardo-math-magicians.onrender.com/',
+    sourceUrl: 'https://github.com/bohaz/math-magicians',
   }
 };
 
@@ -183,8 +195,13 @@ document.querySelectorAll('.project-link').forEach(item => {
     document.getElementById('popupTitle').textContent = title;
     
     // Actualizar los enlaces en el popup
-    document.getElementById('popupSource').href = projectData.sourceUrl;
-    document.getElementById('popupLive').href = projectData.liveUrl;
+    const sourceLink = document.getElementById('popupSource');
+    sourceLink.href = projectData.sourceUrl;
+    sourceLink.target = '_blank';
+
+    const liveLink = document.getElementById('popupLive');
+    liveLink.href = projectData.liveUrl;
+    liveLink.target = '_blank';
 
     // Mostrar el popup
     popup.style.display = 'flex';
