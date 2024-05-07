@@ -205,24 +205,30 @@ document.querySelectorAll('.project-link').forEach(item => {
     
     // Actualizar los enlaces en el popup
     const sourceLink = document.getElementById('popupSource');
-    sourceLink.href = projectData.sourceUrl;
-    sourceLink.target = '_blank';
+sourceLink.href = projectData.sourceUrl;
+sourceLink.target = '_blank';
 
-    const liveLink = document.getElementById('popupLive');
+const liveLink = document.getElementById('popupLive');
+if (projectData.liveUrl) {
     liveLink.href = projectData.liveUrl;
     liveLink.target = '_blank';
+    liveLink.style.display = 'block'; // Asegura que el enlace esté visible si hay liveUrl
+} else {
+    liveLink.style.display = 'none'; // Oculta el enlace si no hay liveUrl
+}
+
+    
 
      // Actualizar las tecnologías
      const technologiesContainer = document.getElementById('popupTechnologies');
-     technologiesContainer.innerHTML = '';  // Limpiar contenido anterior
+     technologiesContainer.innerHTML = '';  
      projectData.technologies.forEach(tech => {
        const techElement = document.createElement('span');
        techElement.textContent = tech;
-       techElement.classList.add('technology-badge');  // Agregar clase para estilos
+       techElement.classList.add('technology-badge');  
        technologiesContainer.appendChild(techElement);
      });
 
-    // Mostrar el popup
     popup.style.display = 'flex';
   });
 });
