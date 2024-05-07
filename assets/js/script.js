@@ -114,7 +114,6 @@ for (let i = 0; i < filterBtn.length; i++) {
 }
 
 
-
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
@@ -133,7 +132,6 @@ for (let i = 0; i < formInputs.length; i++) {
 
   });
 }
-
 
 
 // page navigation variables
@@ -157,23 +155,25 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
 // project popup 
 
 const projectLinks = {
   'petfashion': {
     liveUrl: 'https://petfashion.vercel.app',
     sourceUrl: 'https://github.com/bohaz/petfashion',
-    technologies: ['React', 'Ruby', 'Tailwind-css'],
+    technologies: ['React', 'Rails', 'Tailwind-css', 'Jest', 'Rspec'],
   },
   'space-travelers-hub': {
     liveUrl: 'https://space-travelers-hub-g5v6.onrender.com',
     sourceUrl: 'https://github.com/bohaz/Space-Travelers-Hub',
-    technologies: ['React', 'Redux', 'Bootstrap'],
+    technologies: ['React', 'Redux', 'Api', 'CSS3', 'Bootstrap', 'Jest'],
   },
   'air-quality': {
     liveUrl: 'https://air-quality-monitoring-app.onrender.com/',
     sourceUrl: 'https://github.com/bohaz/air-quality-monitoring-app',
-    technologies: ['React', 'Redux', 'CSS3'],
+    technologies: ['React', 'Redux', 'Api', 'CSS3', 'Jest'],
   },
   'finals-rodeo': {
     liveUrl: 'https://bohaz.github.io/Capstone-project1/',
@@ -183,13 +183,35 @@ const projectLinks = {
   'math-magicians': {
     liveUrl: 'https://ricardo-math-magicians.onrender.com/',
     sourceUrl: 'https://github.com/bohaz/math-magicians',
-    technologies: ['React', 'Redux', 'CSS3'],
+    technologies: ['React', 'Redux', 'Api', 'CSS3', 'Jest'],
   },
   'transac-trends': {
     sourceUrl: 'https://github.com/bohaz/Budget-app',
-    technologies: ['Rails', 'PostgreSql', 'CSS3'],
+    technologies: ['Rails', 'PostgreSql', 'CSS3', 'Rspec'],
   }
 };
+
+const techIcons = {
+  'React': './assets/images/tech_icons/react.svg',
+  'Redux': './assets/images/tech_icons/redux.svg',
+  'CSS3': './assets/images/tech_icons/css.svg',
+  'Bootstrap': './assets/images/tech_icons/bootstrap.svg',
+  'Ruby': './assets/images/tech_icons/ruby.svg',
+  'Tailwind-css': './assets/images/tech_icons/tailwind.svg',
+  'HTML': './assets/images/tech_icons/html.svg',
+  'Javascript': './assets/images/tech_icons/javascript.svg',
+  'Rails': './assets/images/tech_icons/rails.svg',
+  'PostgreSql': './assets/images/tech_icons/postgres.svg',
+  'Jest': './assets/images/tech_icons/jest.svg',
+  'Rspec': './assets/images/tech_icons/rspec.svg',
+  'Api': './assets/images/tech_icons/api.svg'
+
+};
+
+// Inicialización de enlaces y contenedor de tecnologías
+const sourceLink = document.getElementById('popupSource');
+const liveLink = document.getElementById('popupLive');
+const technologiesContainer = document.getElementById('popupTechnologies');
 
 document.querySelectorAll('.project-link').forEach(item => {
   item.addEventListener('click', function() {
@@ -204,34 +226,39 @@ document.querySelectorAll('.project-link').forEach(item => {
     document.getElementById('popupTitle').textContent = title;
     
     // Actualizar los enlaces en el popup
-    const sourceLink = document.getElementById('popupSource');
-sourceLink.href = projectData.sourceUrl;
-sourceLink.target = '_blank';
+    updateLinks(projectData);
 
-const liveLink = document.getElementById('popupLive');
-if (projectData.liveUrl) {
-    liveLink.href = projectData.liveUrl;
-    liveLink.target = '_blank';
-    liveLink.style.display = 'block'; // Asegura que el enlace esté visible si hay liveUrl
-} else {
-    liveLink.style.display = 'none'; // Oculta el enlace si no hay liveUrl
-}
-
-    
-
-     // Actualizar las tecnologías
-     const technologiesContainer = document.getElementById('popupTechnologies');
-     technologiesContainer.innerHTML = '';  
-     projectData.technologies.forEach(tech => {
-       const techElement = document.createElement('span');
-       techElement.textContent = tech;
-       techElement.classList.add('technology-badge');  
-       technologiesContainer.appendChild(techElement);
-     });
+    // Actualizar las tecnologías
+    updateTechnologies(projectData);
 
     popup.style.display = 'flex';
   });
 });
+
+function updateLinks(projectData) {
+  sourceLink.href = projectData.sourceUrl;
+  sourceLink.target = '_blank';
+  
+  if (projectData.liveUrl) {
+    liveLink.href = projectData.liveUrl;
+    liveLink.target = '_blank';
+    liveLink.style.display = 'block'; // Mostrar el enlace si hay liveUrl
+  } else {
+    liveLink.style.display = 'none'; // Ocultar el enlace si no hay liveUrl
+  }
+}
+
+function updateTechnologies(projectData) {
+  technologiesContainer.innerHTML = '';  
+  projectData.technologies.forEach(tech => {
+    const techElement = document.createElement('img');
+    techElement.src = techIcons[tech];
+    techElement.alt = `${tech} icon`;
+    techElement.width = 35;
+    techElement.classList.add('technology-icon');  
+    technologiesContainer.appendChild(techElement);
+  });
+}
 
 document.querySelector('.close').addEventListener('click', function() {
   document.getElementById('projectPopup').style.display = 'none';
