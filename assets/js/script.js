@@ -184,6 +184,10 @@ const projectLinks = {
     liveUrl: 'https://ricardo-math-magicians.onrender.com/',
     sourceUrl: 'https://github.com/bohaz/math-magicians',
     technologies: ['React', 'Redux', 'CSS3'],
+  },
+  'transac-trends': {
+    sourceUrl: 'https://github.com/bohaz/Budget-app',
+    technologies: ['Rails', 'PostgreSql', 'CSS3'],
   }
 };
 
