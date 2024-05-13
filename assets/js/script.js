@@ -191,7 +191,7 @@ const projectLinks = {
   },
   'bloguers': {
     sourceUrl: 'https://github.com/bohaz/BlogApp',
-    technologies: ['Rails', 'PostgreSql', 'CSS3', 'Rspec'],
+    technologies: ['Rails', 'PostgreSql', 'Tailwind-css', 'Rspec'],
   }
 };
 
