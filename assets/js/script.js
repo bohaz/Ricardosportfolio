@@ -188,6 +188,10 @@ const projectLinks = {
   'transac-trends': {
     sourceUrl: 'https://github.com/bohaz/Budget-app',
     technologies: ['Rails', 'PostgreSql', 'CSS3', 'Rspec'],
+  },
+  'bloguers': {
+    sourceUrl: 'https://github.com/bohaz/BlogApp',
+    technologies: ['Rails', 'PostgreSql', 'CSS3', 'Rspec'],
   }
 };
 
