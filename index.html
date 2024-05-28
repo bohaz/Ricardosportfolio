@@ -10,20 +10,28 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+  <link rel="shortcut icon" href="./assets/images/letra-r (2).png" type="image/x-icon">
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/css/popup.css">
-
+  
   <!--
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+   <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-15TW0TYRLN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-15TW0TYRLN');
+  </script>
 </head>
 
 <body>
@@ -49,7 +57,9 @@
         <div class="info-content">
           <h1 class="name" title="Ricardo Martínez">Ricardo Martínez</h1>
 
-          <p class="title">Web developer</p>
+          <p class="title">Software developer</p>
+          <button id="downloadResumeButton" class="getmyresume" type="button">Get my resume</button>
+
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -128,12 +138,12 @@
 
         <ul class="social-list">
 
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+          <!-- <li class="social-item">
+            <a href="https://wa.me/56984506314" class="social-link">
+              <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
-
+ -->
           <li class="social-item">
             <a href="https://github.com/bohaz" class="social-link">
               <ion-icon name="logo-github"></ion-icon>
@@ -209,18 +219,18 @@
         </header>
 
         <section class="about-text">
-          <p>
+          <h2>
             Hey There.
-            I’m Ricardo,
-            a Software Developer
-          </p>
-
+            I’m Ricardo.
+          </h2>
           <p>
-            I can help you build a product, feature
-            or website. Look through some of my
-            work and experience! If you like what you
-            see and have a project you need coded,
-            don’t hesitate to contact me.
+            I’m a Software Developer with One year of learning and working with Ruby on Rails, JavaScript, React, Redux, and more, gaining a strong foundation in both front-end and back-end technologies. 
+          </p>
+          <p> 
+            As an entrepreneur and software developer, I developed PetFashion, a visually appealing website that showcases my passion for technology and pet care. This innovative platform has significantly enhanced our visibility and attracted new clients.
+          </p>
+          <p>
+            I’m looking for my first Full-Stack Developer role. I’m eager to apply what I've learned and continue growing professionally.
           </p>
         </section>
 
@@ -271,14 +281,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+                <img src="./assets/images/icon-shop.svg" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Entrepreneurship</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  I successfully built a company in the pet industry.
                 </p>
               </div>
 
@@ -287,14 +297,14 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+                <img src="./assets/images/music.svg" alt="camera icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Musician</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  In my free time I play the harp.
                 </p>
               </div>
 
@@ -470,44 +480,91 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">My Stack</h3>
 
           <ul class="clients-list has-scrollbar">
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/PfLogo2.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/javascript.svg" alt="Web development icon" width="40">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/react.svg" alt="Web development icon" width="40">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/ruby.svg" alt="Web development icon" width="40">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/rails.svg" alt="Web development icon" width="40">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/tailwind.svg" alt="Web development icon" width="40">
             </li>
 
             <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
+              <img src="./assets/images/tech_icons/material.svg" alt="Web development icon" width="40">
+            </li>
+
+            
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/html.svg" alt="Web development icon" width="40">
+            </li>
+
+           
+            
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/css.svg" alt="Web development icon" width="40">
+            </li>
+
+            
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/bootstrap.svg" alt="Web development icon" width="40">
+            </li>
+
+           
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/postgres.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/docker.svg" alt="Web development icon" width="40">
+            </li>
+
+            
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/redux.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/git.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/github.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/stack.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/postman.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/figma.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/jest.svg" alt="Web development icon" width="40">
+            </li>
+
+            <li class="clients-item">
+              <img src="./assets/images/tech_icons/sass.svg" alt="Web development icon" width="40">
             </li>
 
           </ul>
@@ -608,7 +665,9 @@
               <span>April 2023 — Present</span>
 
               <p class="timeline-text">
-                PetFashion is our professional and dedicated pet grooming salon. As a software developer, I have created this web application not only as a digital portal for our services but also as a reflection of our commitment to innovation and excellence. This platform represents the fusion of my passion for technological development and pet care.
+                - I have developed more than 40 projects using several languages and frameworks, including HTML5, CSS3, Ruby on Rails, JavaScript, React, and Redux. <br>
+                - I have utilized Git and GitHub for version control and collaborated with developers from around the world. <br>
+                - I have worked with remote teams and developed projects using Agile methodologies.
               </p>
 
             </li>
@@ -652,51 +711,64 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web design</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Graphic design</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Branding</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">WordPress</h5>
-                <data value="50">50%</data>
+                <h5 class="h5">Database Management</h5>
+                <data value="80">50%</data>
               </div>
 
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">CLI</h5>
+                <data value="70">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="90">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Version Control</h5>
+                <data value="50">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">API Design</h5>
+                <data value="50">40%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 40%;"></div>
               </div>
 
             </li>
@@ -787,7 +859,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Petfashion.png" alt="Pet Fashion">
+                  <img src="./assets/images/Petapp.png" alt="Pet Fashion">
                 </figure>
 
                 <h3 class="project-title">Pet Fashion</h3>
@@ -795,36 +867,36 @@
               </a>
             </li>
 
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a class="project-link" data-id="medica">
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a class="project-link" data-id="transac-trends">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/Medica.png" alt="orizon" loading="lazy">
+                  <img src="./assets/images/Trend.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Medica</h3>
+                <h3 class="project-title">Transactrends</h3>
 
-                <p class="project-category">Web development</p>
+                <p class="project-category">Web design</p>
 
               </a>
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a class="project-link" data-id="fundo">
+              <a class="project-link" data-id="bloguers">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                  <img src="./assets/images/Bloguers.png" alt="metaspark" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Fundo</h3>
+                <h3 class="project-title">Bloguers</h3>
 
                 <p class="project-category">Web design</p>
 
@@ -832,17 +904,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="#">
+              <a class="project-link" data-id="space-travelers-hub">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                  <img src="./assets/images/Space.png" alt="brawlhalla" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">Brawlhalla</h3>
+                <h3 class="project-title">Space Traveler's Hub</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -850,17 +922,17 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a class="project-link" data-id="air-quality">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                  <img src="./assets/images/Airapp.png" alt="dsm." loading="lazy">
                 </figure>
 
-                <h3 class="project-title">DSM.</h3>
+                <h3 class="project-title">Air Quality Monitoring App</h3>
 
                 <p class="project-category">Web design</p>
 
@@ -868,22 +940,43 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
+              <a class="project-link" data-id="math-magicians">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                  <img src="./assets/images/Calc.png" alt="fundo" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">MetaSpark</h3>
+                <h3 class="project-title">Math Magicians</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a class="project-link" data-id="finals-rodeo">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/Rodeo.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finals Rodeo</h3>
 
                 <p class="project-category">Web design</p>
 
               </a>
             </li>
+
+
+            <!-- 
 
             <li class="project-item  active" data-filter-item data-category="web development">
               <a href="#">
@@ -937,22 +1030,26 @@
                 <p class="project-category">Web development</p>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
           <!-- Pop-up structure (hidden initially) -->
           <div id="projectPopup" class="popup" style="display: none;">
             <div class="popup-content">
-              <span class="close">&times;</span>
+              <div class="pop-title">
+                <span class="close">&times;</span>
+                <h3 id="popupTitle"></h3>
+              </div>
+              
               <img id="popupImg" src="" alt="Project Image">
-              <h3 id="popupTitle"></h3>
+              
               <p id="popupDesc"></p>
               <div id="popupTechnologies" class="popupTechnologies"></div>
               
               <div class="popupButtons">
-                <div class="popupSource"><a id="popupSource" href="#">See Source</a></div>
-                <div class="popupLive"><a id="popupLive" href="#">See Live</a></div>
+                <div class="popupSource"><a id="popupSource" href="#"><ion-icon name="logo-github"></ion-icon>GitHub</a></div>
+                <div class="popupLive"><a id="popupLive" href="#">Live-Demo</a></div>
               </div>
             </div>
           </div>
@@ -980,10 +1077,10 @@
           <ul class="blog-posts-list">
 
             <li class="blog-post-item">
-              <a href="#">
+              <a href="https://medium.com/@ricardomartinezvet/embracing-agile-principles-in-software-development-a-journey-to-continuous-improvement-4f015ea02b5f">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/Blog.webp" alt="Design conferences in 2022" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
@@ -993,21 +1090,23 @@
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2023-07-28">Jul 28, 2023</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Embracing Agile Principles in Software Development</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    As software developers, our journey is marked by constant growth and adaptation to new challenges. Embracing Agile principles can be the compass that guides us through the ever-evolving landscape of software development, helping us navigate the complexities and deliver exceptional products. In this article, we’ll explore the essence of Agile and how it fosters a culture of continuous improvement in software development. <br>
+                    See more...
                   </p>
+                  
 
                 </div>
 
               </a>
             </li>
 
-            <li class="blog-post-item">
+            <!-- <li class="blog-post-item">
               <a href="#">
 
                 <figure class="blog-banner-box">
@@ -1145,7 +1244,7 @@
                 </div>
 
               </a>
-            </li>
+            </li> -->
 
           </ul>
 
@@ -1179,15 +1278,15 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <form action="https://formspree.io/f/xyyaoqnq" method="POST" class="form" data-form>
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="fullname" maxlength="35" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <textarea name="message" class="form-input" maxlength="550" placeholder="Your Message" required data-form-input></textarea>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
